@@ -1,0 +1,65 @@
+1. Nhập và xuất hàng:
+	1.1 Nhập:
+		Mặt hàng cần nhập
+		Hóa đơn nhập hàng
+		Lưu kho
+		Kế toán
+	1.2 Xuất:
+		Mặt hàng cần bán
+		Hóa đơn bán hàng
+		Xuất kho
+		Kế toán
+
+2. Nhân lực:
+	2.1 Thông tin người làm
+	2.2 Role - Permission
+	2.3 Tính lương - kế toán
+	
+3. Quản lý cửa hàng:
+	3.1 Thông tin cửa hàng
+	3.2 Nhân lực cửa hàng
+	3.3 Mặt hàng cửa tiệm
+	3.4 Doanh thu
+	
+4. Thống kê hệ thống:
+	4.1 Doanh thu:
+		trên mỗi cửa hàng
+		trên mặt hàng
+		trên nhân viên
+	4.2 Khách hàng
+	4.3 Số lượng hàng
+	
+	
+DB:
+1.1:
+	Hang:
+		ma_lo_hang
+		ma_nha_san_xuat
+		ten_mat_hang
+		gia_nhap
+		so_luong
+		thoi_gian_bao_hang
+		ma_vi_tri_trong_kho
+		ma_nguoi_nhap
+		thoi_gian_nhap
+		so_hoa_don
+		thong_so
+		
+	
+	Hoa_Don:
+		ma_hoa_don
+		ma_so_thue
+		ma_nguoi_nhap
+		ma_nguoi_lap_hoa_don
+		nha_cung_cap
+		ma_giao_dich
+		tong_chi_phi
+		
+	Kho:
+		ma_vi_tri
+		vi_tri_tren_ke
+		vi_tri_ke
+		vi_tri_kho
+		ma_nhan_vien_quan_ly
+		
+		
