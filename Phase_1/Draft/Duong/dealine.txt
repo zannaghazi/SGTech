@@ -1,0 +1,41 @@
+
+	Hang:
+		ma_lo_hang
+		ten_mat_hang
+		DonGia
+		so_luong
+		ma_vi_tri_trong_kho
+		MaNV
+		thoi_gian_nhap
+		so_hoa_don
+		thong_so
+          
+       
+	PhieuNHap:
+                MaPN
+                MaLoHang
+                DonGia
+                Soluong
+                ThanhTien
+                MaNV 
+                MaNCC
+                NgayNhap
+               
+	Hoa_Don:
+		ma_hoa_don
+		ma_so_thue
+		MaNV
+		nha_cung_cap
+		ma_giao_dich
+		Thanhtien
+                NgayLap
+		
+	Kho:
+		ma_vi_tri
+                MaNV
+		vi_tri_tren_ke
+		vi_tri_ke
+		vi_tri_kho
+		
+		
+		
