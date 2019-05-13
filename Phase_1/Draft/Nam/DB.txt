@@ -4,7 +4,7 @@ DB:
 
 Mỗi nhân viên từng Bộ phận Thì Sẽ được cấp 1 id  : Ví dụ Kho : K01 
 	 Lô Hàng :
-		ma_lo_hang
+		ma_lo_hang(Primary key )
 		ma_nha_san_xuat
 		ten_mat_hang
 		ma_vi_tri_trong_kho
@@ -13,29 +13,32 @@ Mỗi nhân viên từng Bộ phận Thì Sẽ được cấp 1 id  : Ví dụ K
 		
 	San Pham :
 		ma_lo_hang
+		ma_SanPham (Primary key )
 		so_hoa_don
 		ten_San_Pham
 		Gia_sp
 		Ma_nv( Tư vấn )
 		ma_ch ( Địa chỉ nào còn sản phẩm )
 
-	Hoa_Don_Nhap
-		ma_hoa_don
+	Hoa_Don_Nhap 
+		ma_hoa_don(Primary key )   // Có Thể Tạo 1 bảng Hoadon  và chia 2 Cột là hóa đơn bán và hóa đơn nhập 
 		ma_so_thue
 		ma_Nv
 		so_luong
 		gia_Mh
 		nha_cung_cap ( Đối tác)	
 		tong_chi_phi(Thanh tien )
+		Ngay_Lap_HD
 
 	Hoa_Don_Ban:
-		ma_hoa_don
-		ma_so_thue
+		ma_hoa_don(Primary key)  // Dựa vào hóa đơn Để có thể bảo hành được sản phẩm hoặc truy xuất thông tin sản phẩm khách hàng đã mua 
+		ma_so_thue	
+		ma_Nv
 		so_luong
 		gia_Mh
 		Ma_Nv(sale)
-		tong_chi_phi(Thành Tiền)
-		
+		tong_chi_phi(Thành Tiền -- Giá cuối cùng do sale chốt giá với khách hàng)
+		Ngay_Lap_HD
 	Kho:
 		ma_vi_tri
 		vi_tri_tren_ke
