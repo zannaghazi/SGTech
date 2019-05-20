@@ -1,4 +1,4 @@
-Vì đây là 1 hệ thống lớn nên FB ko thể nào dựa trên chức năng làm riêng lẻ. E đã tham khảo tất cả chức năng phase và đưa ra kết luận về DB cho mục 1.1
+﻿Vì đây là 1 hệ thống lớn nên FB ko thể nào dựa trên chức năng làm riêng lẻ. E đã tham khảo tất cả chức năng phase và đưa ra kết luận về DB cho mục 1.1
 
 LO_HANG:
 	ma_lo_hang
@@ -44,7 +44,52 @@ HOA_DON_NHAP:
 	id_nguoi_nhan // id nhân viên nhận hàng 
 	tong_gia_tri
 	
+------------------------------------------
+HOA_DON_BAN:
+	ma_hoa_don
+	ma_giao_dich
+	ngay_lap
+	ma_nhan_vien_lap
+	ma_khach_hang
+	chi_tiet_don_hang (JSON)
+	tong_gia_tri
+
+PHIEU_XUAT_KHO //E nghĩ cái này cần thiết vì nhiều chi nhánh đến lấy 1 kho nên phải quản lý
+	ma_phieu
+	ngay_lap_phieu
+	ma_nhanh_vien_lay_hang
+	ma_vi_tri (List)
+	danh_sach_hang (JSON)
+	tong_gia_tri
+	ma_nhan_vien_kiem_kho
 	
+NHAN_VIEN
+	ma_nhan_vien
+	ten_nhan_vien
+	dia_chi_thuong_tru
+	role_id (List)
+	is_active //Nhân viên nghỉ việc ko bị xóa mà chỉ bị ẩn đi thôi
+	vi_tri_lam_viec// ở kho, ở shop hay quản lý,...
+	salary_id
+	loai_nhan_vien // Part time hay full time hay hợp đồng
 	
+DIEM_DANH: // tính giờ để tính lương
+	ma_nhan_vien
+	ngay
+	so_gio_lam_viec
+
+LUONG
+	ma_luong
+	luong_co_ban
+	extra_salary (JSON) // Lương theo hệ số sale, lương thưởng, OT, hỗ trợ xăng xe điện thoại,...
+	chi_phi_khac // tiền bảo hiểm, thuế,...
 	
-	
+ROLE
+	role_id
+	role_name
+	permission_id (List)
+
+PERMISSION // Vì hệ thống cơ bản có nhiều chức năng, từ khách hàng đến nhân viên đến sếp đều có thể làm nên e chia 1 bảng nữa
+	permission_id
+	feature_name
+	privilege // Có lẽ nên có 3 quyền. Ko được sửa, xem/ Chỉ được xem/Được sửa và xem
