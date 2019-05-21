@@ -38,4 +38,30 @@ Mỗi nhân viên từng Bộ phận Thì Sẽ được cấp 1 id  : Ví dụ K
 		vi_tri_kho
 		ma_nhan_vien_quan_ly(K0x)
 		
-		
+	Xuất Hàng : 
+   Ten_Mat_hang ; ----  
+   Ma_hang ;
+   Gia;
+   Hoa_don ; 
+   mã_nv
+   Vị_tri 
+   time 
+   Dich_vu  	
+	
+ Hang 
+  Ten_mh
+  Gia_Mh
+  Ma_Nv
+  ma_hoa_don 
+  Vi_tri_Kho
+  Ghi _Chu 
+  
+  Hoa_don_xuat
+  Thoi_gian 
+  ma_hoa_don 
+  Gia_ban 
+  so_luong 
+  Ma_so_thue 
+  Ma_Nv
+  Giao_hang 
+  Kieu_giaodich	
