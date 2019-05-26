@@ -1,71 +1,121 @@
-        LoHang:
-                MaLohang
-                TenLohang
-                Ma_vi_tri_kho
-                SoLuong
-                GiaNhap
-                MaNV
-                NgayNhap
-                NCC
-                mahd 
-                Ghichu
-	Hang:
-		ma_lo_hang
-                mamathang
-		ten_mat_hang
-		gianhap
-                giaban
-		so_luong
-		ma_vi_tri_trong_kho
-		MaNV
-		Thongtin(bao gom cac thong tin chi tiet ve mat hang do vd: xu ly, the he, bao hanh)
-		Ghichu
-               
-          
-               
-	Hoa_Don_nhap:
-		ma_hoa_don_nhap
-		ma_so_thue
-                ma_lo_hang
-                MaNV
-		nha_cung_cap
-		ma_giao_dich
-		soluong
-                gianhap
-                NgayLap
-        
-                ghichu
-        
-		
-	Kho:    
-                MaKHo
-                TenKho
-                Diachi
-                MaVitri
-      vitri
-           MaVItri
-           TenVitri
-           ghichu
-      User 
-          Ma_NV
-          Ten_NV 
-          CHucVU
-          ThongTin(hoc van, ngay sinh, dia chi, gioi tinh, que quan,...tuong ung vs cac truong)
-          GhiChu
-      ChucVu
-          Ma_chucvu
-          ChucVu
-          Quyen
-          
-      QUyen
-          MaQuyen
-          QUyen
-          ChucNang
-      ChucNang
-          ID_chucNang
-          ChucNang 
-          
-         
-		
-		
-		
+Shipment: 
+  Shipment_code
+  Shipment_name
+  Amount
+  Import_Price
+  Code_invoice
+  Location_code
+  NCC
+  Note
+Line: 
+  Product_code 
+  Product_name 
+  Shipment_code
+  Amount
+  price
+  import_price
+  information(json)
+  employees_code
+  unit
+  note
+Warehouse:
+  Warehouse_code 
+  Warehouse_name 
+  address
+  location_code 
+
+Import invoice : 
+   Invoic_import_code 
+   Tax_code 
+   date founded
+   Shipment_code
+   employees_code
+   Trading_code
+   Amount
+   import_price
+   note
+
+bill of sale: 
+   Invoice_code 
+   Tax_code 
+   price
+   customer's_code
+   employees_code
+   date founded
+   invoice details (json)
+   note
+ 
+ delivery bill:
+     delivery_bill_code  
+     date founded
+     employees_code_1
+     employees_code_2 
+     list_line(list)
+     Total_value
+     location_code 
+ User:
+    User_code 
+    Name_user 
+    Location
+    Part ( because in a city lot of part) 
+    Information ( json) 
+    Status: activety or off 
+    Salary
+   
+location:(ch?c v?)
+    User_code
+    location_code 
+    location_name
+    authorities_name
+    inauguration_day
+    
+authorities: 
+    authorities_code 
+    authorities_name
+    action_Code (list) 
+action: 
+    action_code 
+    action_name
+Guest: 
+    Guest_Code 
+    Guest_name 
+    address 
+    phone 
+Part:
+   ID 
+   part_name 
+salary 
+   wage(1-10)
+   basic_salary
+   coefficients_salary
+   Allowance coefficient
+Timekeeping
+   Date 
+   AM 
+   PM 
+   User_code 
+   Time
+ store 
+    Store_code 
+    Store_name 
+    Address 
+    location ( 
+    Amount_employee(s? lu?ng nhân viên a lot of NV in json update template 27/5) 
+   I think this is necessary 
+   because it will be easier to identify which stores have positions that mean positions and divide into groups :)))
+    Product_code
+    Product_name 
+    amoutn product 
+      
+    Tonight I will say about the hard-to-imagine database idea to write so there are many shortcomings: V
+     
+     
+     
+     
+  
+   
+
+
+   
+   
+   
