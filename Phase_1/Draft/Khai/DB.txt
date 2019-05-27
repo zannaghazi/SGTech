@@ -93,3 +93,38 @@ PERMISSION // Vì hệ thống cơ bản có nhiều chức năng, từ khách h
 	permission_id
 	feature_name
 	privilege // Có lẽ nên có 3 quyền. Ko được sửa, xem/ Chỉ được xem/Được sửa và xem
+
+
+----------------------------------------------------------
+
+	
+Update table:
+EMPLOYEES // Update table NHAN_VIEN:
+	employee_id
+	employee_name
+	address
+	work_store // Linked with STORE.store_id
+	role_id (List)
+	deleted_flag (Boolean)
+	salary_id
+
+Add new table:
+WORK_LOCATION // It contain both company, store and storage 
+	work_locattion_id
+	work_locattion_name
+	location (JSON) //for search nearest store. template: address/street/ward/district/city/country
+	
+STORE_GOODS
+	store_storage_id
+	store_id
+	item_id
+	amount
+
+SALE_STATISTIC
+	sale_id // auto raise
+	item_id
+	bill_id
+	sale_price
+	import_price
+	
+	
