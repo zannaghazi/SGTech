@@ -1,0 +1,86 @@
+﻿Xuat hang 
+       Item : 
+			item_id   //int
+			catalog_id    // Primarykey  
+			name_item    // varchar
+			price_item    //decimal
+			Location_id //  Location in warehouse 
+			information_item //( Json -- Supplier -- Shippment--product  --Date)
+			{
+				status_item  
+				images_item     
+				discout_item
+			}
+			note
+		Catalog_item:   // bang danh muc san pham 
+			catalog_id // primarykey   int
+			catalog_name  //varchar
+			Indexing_id  // Chi muc cua tung danh muc sanh pham 
+			
+		User :// Khach hàng cung dc goi la custommer	
+			user_id      // int
+			user_name    //varchar
+			user_mail    // varchar
+			user_password // varchar
+			user_address   //varchar
+			user_telephonenumber // int
+			user_create    //date
+			user_activity /// 1 or 0 
+		Person  : 
+			Person_id: // 
+			Person_name 
+			Person_information // Json
+			{
+				person_address // diachi 
+				person_Level //trinh do 
+				person_Working time   // Partime or full time 				
+				Person _IMG // Anh cua person 
+			    person_telephonenumber   //So dt lien he 
+			}
+			salarybasic
+			Time_id
+			Permission_id  // ( Permission) Quyen han truy cap 
+		Salary : // Tien luong 
+		
+				// he so luong (^-^) e chua tim đc tu nao chinh xac o cai bac luong nay , cai tu wage nó nghia k dung lam
+				time 
+				salarybasic
+			    salarybonus
+			    math = .....
+		Working time : 
+				Time_id
+				Date
+				HOUR ( Begin -- end ) 
+				
+		Permission	: // Chia theo tung team  => Phongban => Congty 
+			Permission_id // primarykey
+			Permission_name
+			Act_id  	 // 
+		ACT     :  // Cac hanh dong  //List
+		   Act_id // primarykey
+		   Act_name
+		Warehouse: 
+			location_id
+			location_ Shelf
+			Location_warehouse
+		
+		Import bill	:
+			person_id //  int
+			Id_bill // Primarykey
+			Tax_Code  //varchar
+			catalog_id 
+			price_lotitem// decimal
+			information_item ( Json -- Supplier -- Shippment--product  --Date)
+			date
+	
+		Export bill:
+			Person_id // nhan vien lam hoa don 
+			Id_bill // Primarykey
+			catalog_id 
+			price_lotitem  // gia cua mat hang  decimal
+			user_id
+			user_name
+			user_phone
+			amout_bill // tong tien thanh toan
+			payment  // hinh thuc giao dich 
+			date
